@@ -26,7 +26,7 @@ def proof_of_work(last_proof):
     proof = 0
     #  TODO: Your code here
     while not valid_proof(previous_hash,proof):
-        proof+=3126
+        proof+=1
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
 
